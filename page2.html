@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form with WAF</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .container { max-width: 400px; margin: auto; }
+        input[type=text] { width: 100%; padding: 10px; margin: 5px 0; }
+        input[type=submit] { background: #2196F3; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        .protected { background: #e8f5e8; padding: 15px; border-left: 4px solid #4CAF50; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Form (with WAF)</h2>
+        <div class="protected">
+            <strong>This form is protected by ModSecurity WAF</strong>
+        </div>
+        <form method="POST" action="login2.php">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
